@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
- * main - adds positive numbers.
- * @argc: number of command line arguments.
- * @argv: array that contains the program command line arguments.
- * Return: 0 - success.
+ * main - main funct
+ * @argc: param count
+ * @argv: param poiter
+ * Return: int
  */
 int main(int argc, char *argv[])
 {
-	int i, j, add = 0;
+	int i, j, sum = 0;
 
 	for (i = 1; i < argc; i++)
 	{
@@ -21,8 +21,8 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		add += atoi(argv[i]);
+		sum += atoi(argv[i]);
 	}
-	printf("%d\n", add);
+	printf("%d\n", sum);
 	return (0);
 }

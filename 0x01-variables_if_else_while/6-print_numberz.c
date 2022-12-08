@@ -1,26 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - print single digit numbers
+ * main - Entry point
  *
- * Desciption: print single digit numbers
- *
- * Return: Always 0 (Success)
+ * Return: Always 0 (Success/correct)
  */
-
 int main(void)
 {
 	int i;
 
-	i = 48;
-
-	while (i < 58)
+	for (i = 48; i < 58; i++)
 	{
 		putchar(i);
-		i++;
 	}
-
-	putchar(10);
-
+	putchar('\n');
 	return (0);
 }
